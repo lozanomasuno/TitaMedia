@@ -1,0 +1,99 @@
+:root {
+    --color-primary: #fc758c;
+  }
+body{
+    font-family: Questrial, Monserrat, sans-serif;
+    src: url('./fonts/Questrial/Questrial.otf') format("opentype");
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border:  0 5%;
+}
+.menu-options div{
+    width: 145px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.menu-options div:not(:last-child):hover{
+    background: var(--color-primary);
+    color: white;
+    cursor: pointer; 
+    fill: #fff;
+}
+.menu-options div:active {
+    background: var(--color-primary);
+    color: white;
+    cursor: pointer; 
+    fill: #fff;
+}
+#glass svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--color-primary);
+    transition: 0.3s;
+}
+#glass svg:hover{
+    fill: #000;
+    cursor: pointer;
+}
+
+.header{
+    position: absolute;    
+    background: var(--color-primary);
+    background: linear-gradient(90deg, rgba(255,118,142,1) 0%, rgba(252,117,140,1) 100%);
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.header p{   
+    font-weight:600;    
+    text-align: center;
+}
+
+.header p:first-child{
+    width: 100%;
+    font-size: 4em;
+}
+
+.header p:nth-child(2n){
+    width: 45%;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.header button {
+    position: relative;
+    bottom: -50px;
+    left: 4px;
+    color: var(--color-primary);
+    border: none;
+    background-color: #fff;
+    width: 150px;
+    height: 45px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.header button:hover{
+    background-color: aliceblue;
+    transition: 0.3s;
+    font-weight: 500;
+}
+    
